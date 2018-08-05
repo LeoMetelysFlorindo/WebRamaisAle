@@ -1,0 +1,36 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Site.master.vb" Inherits="RamaisAleam.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <form runat="server">
+    <asp:ScriptManager runat="server">
+        <Scripts>
+            <asp:ScriptReference Name="jquery" />
+            <asp:ScriptReference Name="jquery.ui.combined" />
+        </Scripts>
+    </asp:ScriptManager>
+  
+    <div id="body">
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+    </div>
+    <footer>
+        <br />
+        <br />
+        <br />
+        <div class="content-wrapper">
+            <div STYLE="font-family: Humnst777 Cn BT; 
+font-size: 12px; color: blue" class="float-left">
+                <p>
+                  <b><%:DateTime.Now.Year%> - Assembléia Legislativa do Estado do Amazonas. Diretoria de Informática. Gerência de Aplicativos. Tel.: 3183-4340. Desenvolvedor: Leonardo Metelys.</b>
+                </p>
+            </div>
+        </div>
+    </footer>
+    </form>
+</body>
+</html>
